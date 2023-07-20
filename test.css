@@ -33,7 +33,7 @@ h1{
     background: purple;
     color:purple;
   }
-  .bg-1 h3 {color: #fff;}
+  .bg-1 h3 {color: brown;}
   .bg-1 p {font-style: italic;}
   .list-group-item:first-child {
     border-top-right-radius: 0;
@@ -84,7 +84,7 @@ h1{
   }  
   .navbar {
     margin-bottom: 0;
-    background-color:black;
+    background-color:purple;
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
@@ -104,11 +104,11 @@ h1{
     border-color: transparent;
   }
   .open .dropdown-toggle {
-    color: #fff;
+    color: paleturquoise;
     background-color: #555 !important;
   }
   .dropdown-menu li a {
-    color: black!important;
+    color:black!important;
   }
   .dropdown-menu li a:hover {
     background-color: purple!important;
