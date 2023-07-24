@@ -22,6 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+
+
     <style>
 
 
@@ -32,8 +34,42 @@
       body{
         background:bisque;
       }
+      div.tablo{
+        overflow-x: auto;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+ 
+    th, td {
+        text-align: left;
+        padding: 6px;
+    }
+ 
+    tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+ 
+    th {
+        background-color: forestgreen;
+        color: white;
+    }
 
 
+
+
+/*burayı sonradan silebilirsin*/
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+}
 
       table, th, td {
   border:6px solid beige ;
@@ -41,7 +77,37 @@
   text-align: center;
 vertical-align: middle;
 
+
 }
+
+    width: 49.99999%;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/*burayı sonradan silebilirsin*/
+
+
+
+
+
+
+
+
 
 
 
@@ -71,46 +137,91 @@ vertical-align: middle;
 
 <div> <center>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
+
     
-    <a class="navbar-brand" href="#">OYUN MARKET</a>
-      </div>
-      <ul class="nav navbar-nav">
- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MAGAZA <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">AnaSayfa</a></li>
-                <li><a href="#">Kesif Cubugu</a></li>
-                <li><a href="#">Puan Dukkanı</a></li>
-                <li><a href="#">Haberler</a></li>
-                <li><a href="#">Istek Listesi</a></li>
-                <li><a href="#">Istatistikler</a></li>
-              </ul>
-            </li>
-<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TOPLULUK <span class="caret"></span></a>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+  
+  <a class="navbar-brand" href="#">OYUN MARKET</a>
+    </div>
+    <ul class="nav navbar-nav">
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MAGAZA <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">AnaSayfa</a></li>
-            <li><a href="#">Tartısmalar</a></li>
-            <li><a href="#">Atolye</a></li>
-            <li><a href="#">Pazar</a></li>
-            <li><a href="#">Iletisim</a></li>
-           </ul>
-        </li>
+              <li><a href="#">AnaSayfa</a></li>
+              <li><a href="#">Kesif Cubugu</a></li>
+              <li><a href="#">Puan Dukkanı</a></li>
+              <li><a href="#">Haberler</a></li>
+              <li><a href="#">Istek Listesi</a></li>
+              <li><a href="#">Istatistikler</a></li>
+            </ul>
+          </li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TOPLULUK <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">AnaSayfa</a></li>
+          <li><a href="#">Tartısmalar</a></li>
+          <li><a href="#">Atolye</a></li>
+          <li><a href="#">Pazar</a></li>
+          <li><a href="#">Iletisim</a></li>
+         </ul>
+      </li>
 
 <li><a href="#">HAKKINDA</a></li>
- <li><a href="#">DESTEK</a></li>
- 
- <li><a href="#"><img src="Siyah ve Camgöbeği E-Spor İllüstrasyon Oyun Oyun Logosu.png" class="img-circle" alt="Cinque Terre" width="100" height="70"></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DESTEK<span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Sorun Bildir</a></li>
+ <li><a href="#"> Bizimle Iletisime Geç</a></li>
+ <li><a href="#">Sorular Ve Cevaplar</a></li>
+   </ul>
+</li>
+
+
+
+
+
+<li><a href="#"><img src="Siyah ve Camgöbeği E-Spor İllüstrasyon Oyun Oyun Logosu.png" class="img-circle" alt="Cinque Terre" width="100" height="70"></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ALIŞVERİŞ <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Satın aldıklarım</a></li>
+    <li><a href="#">Favorilere Eklenenler</a></li>
+    <li><a href="#">Ödeme İşlemleri</a></li>
+   
+   </ul>
+</li>
 
 </ul>
 </div>
 </nav>
 
 <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <center>
 
-    <img src="animasyon.gif" alt="Computer Man" style="width: 1350px;height:300px;">
+  
+
+
+  <img src="animasyon.gif" alt="Computer Man" style="width: 1350px;height:300px;">
+  
+
+  
+
+
+
     </center>
     
 
@@ -169,6 +280,8 @@ vertical-align: middle;
            <h3 style="background-color: purple;">NARAKA</h3>
             </div>
           </div>   
+
+
       
         </div>
     
@@ -249,13 +362,17 @@ vertical-align: middle;
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
 
-                <table style="width:100%">
+
+
+            
+
+                <table style="width:180%">
                   <tr>
-                    <td ><li><a href="#"><h4 style="background-color:purple;">ÖZEL KISIMLAR</h4></a></li></td>
-                    <td><li><a href="#"><h4 style="background-color:purple;">TÜRLER</h4></a></li></td>
-                    <td><li><a href="#"><h4></h4></a></li></td>
-                    <td><li><a href="#"><h4></h4></a></li></td>
-                    <td><li><a href="#"><h4></h4></a></li></td>
+                    <td ><li><a href="#"><h3>ÖZEL KISIMLAR</h3></a></li></td>
+                    <td><li><a href="#"><h3>TÜRLER</h3></a></li></td>
+                    <td><li><a href="#"><h4> </h4></a></li></td>
+                    <td><li><a href="#"><h4> </h4></a></li></td>
+                    <td><li><a href="#"><h4> </h4></a></li></td>
                   </tr>
                   <tr>
                     <td>
@@ -297,7 +414,7 @@ vertical-align: middle;
                       <li><a href="#">JRYO</a></li>
                       <li><a href="#">Parti Tabanlı</a></li>
                       <li><a href="#">Rogue Like</a></li>
-                      <li><a href="#">Strateji RYO</a></li>
+                      <li><a href="#">Strateji RYO</a></li><hr>
                       <li><a href="#">Sıra Tabanlı</a></li>
                       <li><a href="#">Similasyon</a></li>
                       <li><a href="#">Hobi ve İş</a></li>
@@ -310,7 +427,7 @@ vertical-align: middle;
                       <li><a href="#">İnşa ve Otomasyon</a></li>
                       <li><a href="#">ilişki</a></li>
                       <li><a href="#">Büyük Strateji ve 4X</a></li>
-                      <li><a href="#">Gerçek Zamanlı Strateji</a></li>
+                      <li><a href="#">Gerçek Zamanlı Strateji</a></li><hr>
                       <li><a href="#">Kart ve Masaüstü</a></li>
                       <li><a href="#">Kule Savunması</a></li>
                       <li><a href="#">Sıra tabanlı Strateji</a></li>
@@ -324,7 +441,7 @@ vertical-align: middle;
                       <li><a href="#">Takım Sporları</a></li>
                       <li><a href="#">Tüm Sporlar</a></li>
                       <li><a href="#">Yarış</a></li>
-                      <li><a href="#">Yarış Smülasyonu</a></li>
+                      <li><a href="#">Yarış Smülasyonu</a></li><hr>
                       <li><a href="#"><h5 style="color:purple; ">OYUNCU DESTEĞİ<h5></a></li>
                     
                       <li><a href="#">Eşli</a></li>
@@ -332,12 +449,17 @@ vertical-align: middle;
                       <li><a href="#">Tek Oyunculu</a></li>
                       <li><a href="#">Yerel Ağ ve parti</a></li>
                       <li><a href="#">Çok Oyunculu</a></li>
-                      <li><a href="#">Çevrimiçi Rekabetçi</a></li>
-                      <li><a href="#">dene3</a></li>
+                      <li><a href="#">Çevrimiçi Rekabetçi</a></li><hr>
+                    
                     </td>
                 </table> 
+          
+
+                
               </ul>
               </li>
+
+         
        
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">HABERLER
@@ -369,15 +491,12 @@ vertical-align: middle;
               </li>
 
               <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROFİL
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROFİLİM
                 <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Profile'a Git</a></li>
+                  <li><a href="#">Arkadaş Listemi Görüntüle</a></li>
                 </ul>
-
-
-
-
 
 
             <li><a href="#">Ara<span class="glyphicon glyphicon-search"></span></a></li>
@@ -390,94 +509,56 @@ vertical-align: middle;
     </div>
 
 
-    
+  
+
+
+   
+      
+ <!-- MODAL RESİMMMM-->
 
 
 
     <div class="container">
-      <h2>Image Gallery</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="/w3images/lights.jpg" target="_blank">
-              <img src="macera.jpg" alt="Lights" style="width:100%" >
-              <div class="caption">
-                <p>MACERA</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="/w3images/nature.jpg" target="_blank">
-              <img src="korku.jpg" alt="Nature" style="width:100%">
-              <div class="caption">
-                <p>KORKU</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="/w3images/fjords.jpg" target="_blank">
-              <img src="bilimkurgu.jpg" alt="Fjords" style="width:100%">
-              <div class="caption">
-                <p>BİLİM KURGU</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+      <h2>Small Modal deneme açılır resim açıklama</h2>
+      <!-- Trigger the modal with a button -->
+      <img src="aksiyon.jpg" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
     
-    <div class="container">
-      <h2>Image Gallery</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="/w3images/lights.jpg" target="_blank">
-              <img src="araba.jpg" alt="Lights" style="width:100%">
-              <div class="caption" style="background-color: gray;">
-                <p>ARABA</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="/w3images/nature.jpg" target="_blank">
-              <img src="images.jpg" alt="Nature" style="width:100%">
-              <div class="caption" style="background-color: black;">
-                <p >YARIS</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="/w3images/fjords.jpg" target="_blank">
-              <img src="aksiyon.jpg" alt="Fjords" style="width:100%" title="SİSTEM GEREKSİNİMLERİ ŞUNLARDIR: abdksjdjndjdfjjnjfdjkgbjfjjjsjskvf">
-              <div class="caption">
-                <p>AKSİYON</p>
-              </div>
-            </a>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>This is a small modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
 
+ <!-- SONRA SİLEBİLİRSİN -->
 
-    <h2>HTML Image</h2>
-    <img src="aksiyon.jpg" alt="Trulli" width="500" height="333">
-    <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">FORUM
-      <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">form'a Git</a></li>
-      </ul>
+ 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
