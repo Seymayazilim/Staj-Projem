@@ -7,73 +7,41 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
 
-<style>
-  /*burası ipucu*/
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
+    /*BURASI RESİMLER VE ANA SAYFA CSS ÖZELLİKLERİ
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-/*burası sayfa tasarımıcss*/
-
- /* Remove the navbar's default margin-bottom and rounded borders */ 
- .navbar {
-      margin-bottom: 0;
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
       border-radius: 0;
     }
     
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
     }
-    
-    /* Set black background color, white text and some padding */
+   
+    /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
+      background-color: #f2f2f2;
+      padding: 25px;
     }
+
+    /*RESİM VE CSS BİTİŞ*/
     
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
 
-
-
-</style>
+  </style>
 </head>
 <body>
-<!--web sayfa ana tasarım taslağı-->
-
+  <!--BURASI  EN ÜST KUTUCUK-->
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Online Store</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+<!--BURASI NAVBAR ALIŞVERİŞ LOGO-->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -87,227 +55,340 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Stores</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
   </div>
 </nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
+<!--BURASI RESİMLERİN BAŞALDIĞI ALAN-->
 
-
-
-
-      <!--atlıkaınca-->
-
-
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-    
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-    
-          <div class="item active">
-            <center>
-            <img src="aksiyon.jpg" alt="Los Angeles" style="width:50%;">
-            </center>
-            
-            <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>LA is always so much fun!</p>
-            </div>
-          </div>
-    
-          <div class="item">
-            <center>
-            <img src="arkaplan.jpg" alt="Chicago" style="width:50%;">
-            </center>
-            <div class="carousel-caption">
-              <h3>Chicago</h3>
-              <p>Thank you, Chicago!</p>
-            </div>
-          </div>
-        
-          <div class="item">
-            <center>
-            <img src="araba.jpg" alt="New York" style="width:50%;">
-            </center>
-            <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
-            </div>
-          </div>
-      
-        </div>
-    
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
-
-<!--atlıkarrınca bitim-->
-
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
-      <h3>Test</h3>
-  
-
-
-
-
-
-      
-
-
-      <p>Lorem ipsum...</p>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
-      <div class="well">
-        <p>ADS</p>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
       </div>
     </div>
   </div>
-</div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+<!--BURASI RESİMLERİN BİTTİĞİ ALAN-->
+<!--BURASI DA EN ALTTAKİ GİRİŞ YAPMA ALANI-->
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
 </footer>
+<br>
+<!--GİRİŞ BİTME ALANI-->
 
-<!--burası ızgara resim-->
+<!--DENEME ALANI-->
 
-<div class="container-fluid">
-  <h1>Hello World!</h1>
-  <p>Resize the browser window to see the effect.</p>
-  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+
+
+<div class="container">    
   <div class="row">
-    <div class="col-sm-4" style="background-color:lavender;">
-      
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">
+          ​
 <div class="container">
-  <h2>Small Modal</h2>
+  
   <!-- Trigger the modal with a button -->
-  <img src="aksiyon.jpg" class="btn-info" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Modal Header</h4>
         </div>
         <div class="modal-body">
-          <p>This is a small modal.</p>
+          <p>Some text in the modal.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+      
     </div>
   </div>
+  
 </div>
-
-      .col-sm-4</div>
-    <div class="col-sm-4" style="background-color:lavender;">
-      
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">
+          ​
 <div class="container">
-  <h2>Small Modal</h2>
+
   <!-- Trigger the modal with a button -->
-  <img src="araba.jpg" class="btn-info" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Modal Header</h4>
         </div>
         <div class="modal-body">
-          <p>This is a small modal.</p>
+          <p>Some text in the modal.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+      
     </div>
   </div>
+  
 </div>
-
-
-
-      .col-sm-4
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4" style="background-color:lavender">
-      
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">
+          ​
 <div class="container">
-  <h2>Small Modal</h2>
+
   <!-- Trigger the modal with a button -->
-  <img src="aksiyon.jpg" class="btn-info" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Modal Header</h4>
         </div>
         <div class="modal-body">
-          <p>This is a small modal.</p>
+          <p>Some text in the modal.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+      
     </div>
   </div>
+  
 </div>
-deneme
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</div><br>
 
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">
+          ​
+<div class="container">
 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-
-
-
-
-
-
-
-
-
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
   </div>
+  
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">
+          ​
+<div class="container">
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+        </div>
+      </div>
+    </div><!--deneme modal-->
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">
+          ​
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">İNCELE</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p>kjsjjsjsjs</p>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+
+
+
+
+
+
+<button type=”button” class=”btn btn-info btn-lg” data-toggle=”modal” data-target=”#myModal”>Open Modal</button>
+<!– Modal –>
+<div id=”myModal” class=”modal fade” role=”dialog”>
+<div class=”modal-dialog”>
+<!– Modal content–>
+<div class=”modal-content”>
+<div class=”modal-header”>
+<button type=”button” class=”close” data-dismiss=”modal”>&times;</button>
+<h4 class=”modal-title”>Modal deneme</h4>
+</div>
+<div class=”modal-body”>
+<p>hadi ol.</p>
+</div>
+<div class=”modal-footer”>
+<button type=”button” class=”btn btn-default” data-dismiss=”modal”>Close</button>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -321,24 +402,19 @@ deneme
 
 
 
-
-
-
-
-
-
-
-
-
-
-<!--burası ipucu resim-->
-
-
-<div class="tooltip">
-    <img src="aksiyon.jpg" alt="dene">
-  <span class="tooltiptext">Tooltip text</span>
-</div>
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
